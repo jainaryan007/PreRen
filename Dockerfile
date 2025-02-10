@@ -1,8 +1,8 @@
 # Use official Nginx image
 FROM nginx:latest
 
-# Copy website files to Nginx default directory
-COPY . /usr/share/nginx/html
+# Copy website files only
+COPY html/ /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
